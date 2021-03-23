@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-03T10:07:25+05:30
+
+====== 7. Modifying WordAdapter class ======
+Created Sunday 03 January 2021
+
+* We need to add code for adding the resourceId to the ''ImageView'' in the ''list_item''.
+But remember that PhrasesActivity has ''Word''(s) which don't have an image.
+As the mImageResourceId is a field and not a local variable, this is not an error In Java: it is initialized to ''null''.

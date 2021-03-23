@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-02T02:52:45+05:30
+
+====== 1. Project Overview ======
+Created Saturday 02 January 2021
+
+The following text is a verbatim copy from Udacity
+'''
+
+Project Overview
+This project is a chance for you to combine and practice everything you learned in this course so far. 
+You will be making a class to represent a report card.
+The goal is to design and create the structure of a ReportCard Java Class which would allow 
+a school to store a student’s gradesfor a particular year. 
+This project will be just a java class, rather than a full Android app.
+
+Why this project?
+Custom classes are critical to every object-oriented program you will build going forward.
+It is vital to be able to think about how to design objects which interact with each other and model real-world concepts.
+
+What will I learn?
+This project is about combining various ideas and skills we’ve been practicing throughout the course. They include:
+
+'''
+* ''Designing a custom class''
+* ''Creating that class in Java code.''
+* ''Storing information in an array''
+* ''Looping through an array''

@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-18T16:22:08+05:30
+
+====== 1. Intro ======
+Created Wednesday 18 November 2020
+
+In this course, we'll be building the Miwok language app in 5 stages:
+1. Lesson 1
+	* Show multiple screen in our app.
+	* Learn how Android handles user touch events.
+	{{./pasted_image.png?width=400}}
+2. Lesson 2
+	* Display a list of words.
+	* Learn about data structures in Java
+	{{./pasted_image002.png?width=400}}
+3. Lesson 3
+	* Add images in the list for each word
+	* Style the app - color, font style, spacing etc
+	{{./pasted_image003.png?width=400}}
+4. Lesson 4
+	* Add a 'listen' button for listening to the pronunciation for each word.
+	* Learn about the media player in Android for playing MP3
+	{{./pasted_image001.png?width=400}}
+5. Lesson 5
+	* Integrate all lists to a single activity
+	* Change the navigation flow by using Activity fragments
+	{{./pasted_image004.png?width=400}}

@@ -1,0 +1,33 @@
+[submodule "3._Basics_-_Multiscreen_Apps/L3_-_Report_Card_app/_ReportCardApp"]
+	path = 3._Basics_-_Multiscreen_Apps/L3_-_Report_Card_app/_ReportCardApp
+	url = https://github.com/android-repo-sink/ReportCardApp.git
+[submodule "3._Basics_-_Multiscreen_Apps/L4/13._Trying_out_audio_playback/AudioTrialApp"]
+	path = 3._Basics_-_Multiscreen_Apps/L4/13._Trying_out_audio_playback/AudioTrialApp
+	url = https://github.com/android-repo-sink/audioTrialApp.git
+[submodule "3._Basics_-_Multiscreen_Apps/_ud839_Miwok"]
+	path = 3._Basics_-_Multiscreen_Apps/_ud839_Miwok
+	url = https://github.com/sanjarcode/ud839_Miwok.git
+[submodule "2._Basics_-_User_Input/_App_2"]
+	path = 2._Basics_-_User_Input/_App_2
+	url = https://github.com/android-repo-sink/showing_text_in_android.git
+[submodule "2._Basics_-_User_Input/_App_5"]
+	path = 2._Basics_-_User_Input/_App_5
+	url = https://github.com/android-repo-sink/radio_and_checkbox.git
+[submodule "2._Basics_-_User_Input/L5_-_More_details/8._Styles/_App_7"]
+	path = 2._Basics_-_User_Input/L5_-_More_details/8._Styles/_App_7
+	url = https://github.com/android-repo-sink/styling_in_android.git
+[submodule "2._Basics_-_User_Input/L5_-_More_details/7._Localization/_App_6"]
+	path = 2._Basics_-_User_Input/L5_-_More_details/7._Localization/_App_6
+	url = https://github.com/android-repo-sink/localization_in_android.git
+[submodule "2._Basics_-_User_Input/_App_3"]
+	path = 2._Basics_-_User_Input/_App_3
+	url = https://github.com/android-repo-sink/CourtCounter.git
+[submodule "2._Basics_-_User_Input/_App_4"]
+	path = 2._Basics_-_User_Input/_App_4
+	url = https://github.com/android-repo-sink/OOP_udacity.git
+[submodule "2._Basics_-_User_Input/_App_1"]
+	path = 2._Basics_-_User_Input/_App_1
+	url = https://github.com/android-repo-sink/JustJava.git
+[submodule "1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/5._Project/_App"]
+	path = 1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/5._Project/_App
+	url = https://github.com/android-repo-sink/HappyBirthday.git

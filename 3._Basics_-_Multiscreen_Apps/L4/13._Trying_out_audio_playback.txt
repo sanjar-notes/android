@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-10T11:31:22+05:30
+
+====== 13. Trying out audio playback ======
+Created Sunday 10 January 2021
+
+We'll create a small project for this.
+{{./pasted_image.png}}
+User story:
+1. Must play an audio. Must play audio from the same position as before.
+2. Pause stops the audio.
+
+Ok, I made [[https://github.com/android-repo-sink/audioTrialApp|this]]:
+Steps:
+* Add an mp3 to ''/res/raw'' 
+{{./pasted_image001.png}} {{./pasted_image002.png}}

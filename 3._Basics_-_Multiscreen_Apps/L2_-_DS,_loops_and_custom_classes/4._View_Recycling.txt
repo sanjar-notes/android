@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-25T18:39:08+05:30
+
+====== 4. View Recycling ======
+Created Wednesday 25 November 2020
+
+* View Recycling - using Views that are no longer visible on the screen.
+* In Instagram, we do have an infinite(new view are being added everytime) number of stories.
+* If we create new views for each story, we'll run out of memory very quickly.
+{{./pasted_image.png?width=500}}
+* Using the ListView and ArrayAdapter, we create only the views that are visible on the screen. i.e If we scroll upwards, we don't need to see the views at the bottom.
+--------------------
+* Recyling actually refers to changing the data of views.
+{{./pasted_image001.png?width=500}}
+--------------------
+
+=== Memory usage - comparison ===
+{{./pasted_image002.png?width=400}} {{./pasted_image003.png?width=400}}

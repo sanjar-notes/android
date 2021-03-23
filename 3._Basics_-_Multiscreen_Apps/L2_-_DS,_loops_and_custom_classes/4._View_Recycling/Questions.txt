@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-12-14T17:38:03+05:30
+
+====== Questions ======
+Created Monday 14 December 2020
+
+Q. Okay, only having views that are currently on screen saves a lot of memory. But 'recycling views', i.e setting new content for old views, instead of destroying them(old ones) and creating new ones doesn't contribute to saving space, aren't the two ways equivalent?
+R. Correct, creating new views(and destroying old ones) or replacing content in old views is **asymptotically** equivalent(space). But 'recycling views' is done to save time, not space. We chose recycling(content replacement) because the process of inflating views(i.e creating new Java objects) from XML is a slow process, and we want to avoid it.
+
+Q. Does View Recycling have anything to do with re-rendering?
+R. No, if a list is scrollable, re-rendering is inevitable. Recyling views has got nothing to do with re-rendering.

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-24T11:16:52+05:30
+
+====== 1. Views ======
+Created Saturday 24 October 2020
+
+* Every visual element in Android is actually a **view** - an invisible rectangular box.
+* Some examples are TextView, ImageView and Button, all in titlecase.

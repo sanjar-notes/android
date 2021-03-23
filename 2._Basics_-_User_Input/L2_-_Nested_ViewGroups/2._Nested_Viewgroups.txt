@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-30T21:39:12+05:30
+
+====== 2. Nested Viewgroups ======
+Created Friday 30 October 2020
+
+We can nest views.
+We have learnt about LinearLayout and RelativeLayout, but there are others as well.
+
+Hierarchy tree for views - It is a tree representing hierarchy of the views in the screen(i.e in the root layout).
+{{./pasted_image.png?width=600}}
+{{./pasted_image001.png?width=600}}
+{{./pasted_image002.png?width=600}}
+* Simple thing, nothing special.

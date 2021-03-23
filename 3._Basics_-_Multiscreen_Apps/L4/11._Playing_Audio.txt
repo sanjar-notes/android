@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-06T09:03:22+05:30
+
+====== 11. Playing Audio ======
+Created Wednesday 06 January 2021
+
+As we are learning a new language, it is crucial to learn the correct prounounciation. We'll add audio to buttons to make this happen.
+
+**For this task, we'll research and come up with a solution on our own.**
+
+=== Approach 1 ===
+The Android multimedia framework includes support for playing a variety of common media types like audio, video and images. It can do so from media files stored in application's raw resources (''res/res''), from files in the filesystem, or from a data stream arriving over a network connection.
+
+The [[https://developer.android.com/guide/topics/media/mediaplayer#mediaplayer|MediaPlayer]] class is used for media playback.
+{{{code: lang="java" linenumbers="True"
+MediaPlayer mp = MediaPlayer.create(context, R.raw.sound_file_1);
+mp.start(); // Audio 
+
+// Other methods
+mp.isPlaying();
+mp.stop();
+}}}
+
+
+Note: [[https://developer.android.com/reference/android/media/AudioManager|AudioManager]] class is for managing audio volume, bluetooth etc. It does not play audio per se.
+
+=== Approach 2 ===
+Using the AudioManager class

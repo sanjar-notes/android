@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-18T18:24:44+05:30
+
+====== 3. Basics - Multiscreen Apps ======
+Created Wednesday 18 November 2020
+
+[[./_ud839_Miwok|Miwok App]]
+
+Multiscreen apps (10 days) - (https://www.udacity.com/course/android-basics-multiscreen-apps--ud839)
+
+[[./english_miwok.pdf]]

@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-04T04:02:47+05:30
+
+====== 1. CheckBox ======
+Created Wednesday 04 November 2020
+
+* It is a view which can hold a boolean value, and has a label.
+{{./pasted_image.png}}
+--------------------
+**Syntax in XML**
+{{{code: lang="xml" linenumbers="True"
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checked="true"
+    android:text="Bingo"/>
+}}}
+
+* In XML, a checkbox is unchecked by default. It can set using the 'checked' field.
+{{./pasted_image002.png}}
+
+**Syntax in Java**
+* To get the value, use **''isChecked()''**.
+{{./pasted_image001.png}}
+* To set a value, use **''setChecked(boolean value)''**.
+* To toggle, use **''toggle()''**.
+{{./pasted_image003.png}}
+--------------------

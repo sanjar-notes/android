@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-24T11:33:28+05:30
+
+====== 3. XML Syntax ======
+Created Saturday 24 October 2020
+
+Rules for valid XML
+* A tag must have a closing tag. Tags with no(enclosing) content are self-closing.
+* Tags can be nested.
+* Tags have attributes and values(strings).
+
+Examples
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+{{./pasted_image.png}}

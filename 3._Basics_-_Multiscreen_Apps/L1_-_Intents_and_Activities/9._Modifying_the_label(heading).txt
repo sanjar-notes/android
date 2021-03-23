@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-21T18:37:14+05:30
+
+====== 9. Modifying the label(heading) ======
+Created Saturday 21 November 2020
+
+{{./pasted_image.png?width=250}} {{./pasted_image001.png?width=250}}
+* We can see that the heading, technically called a label, remains the same even when we switch activity.
+* For it to change, we need to add a **label** attribute to the respective **activity** tag in the AndroidManifest.xml file.
+{{./pasted_image002.png}}
+* Now, the label changes when activity is switched.
+{{./pasted_image003.png?width=250}}

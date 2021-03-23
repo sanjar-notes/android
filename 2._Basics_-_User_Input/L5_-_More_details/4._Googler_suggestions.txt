@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-04T05:34:18+05:30
+
+====== 4. Googler suggestions ======
+Created Wednesday 04 November 2020
+
+https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/

@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-21T02:59:23+05:30
+
+====== xtra ======
+Created Saturday 21 November 2020
+
+* App was not running. So had to update these files:
+	1. build.gradle
+	2. /app/build.gradle
+	3. gradle-wrapper.properties
+* Works fine now

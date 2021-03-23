@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-10-24T12:05:17+05:30
+
+====== 5. wrap content ======
+Created Saturday 24 October 2020
+
+This is a relational value, i.e dimension is not specified explicitly.
+''wrap_content'' wraps around the content/text, i.e tightly enclosure.
