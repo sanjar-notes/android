@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-24T11:20:48+05:30
-
-====== 2. IDE and XML ======
-Created Saturday 24 October 2020
-
-* An IDE is a tool used in programming, Android Studio is the IDE for making Android apps.

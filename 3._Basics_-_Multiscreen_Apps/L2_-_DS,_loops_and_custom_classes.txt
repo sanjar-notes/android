@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-11-23T18:54:35+05:30
-
-====== L2 - DS, loops and custom classes ======
-Created Monday 23 November 2020
-

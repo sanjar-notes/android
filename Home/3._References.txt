@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-01-10T11:51:55+05:30
-
-====== 3. References ======
-Created Sunday 10 January 2021
-
-* https://google-developer-training.github.io/android-developer-fundamentals-course-concepts-v2/
-* Slides - https://drive.google.com/drive/folders/1eu-LXxiHocSktGYpG04PfE9Xmr_pBY5P?usp=sharing

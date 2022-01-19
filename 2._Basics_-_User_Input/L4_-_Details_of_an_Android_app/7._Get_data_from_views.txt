@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-11-03T16:35:38+05:30
-
-====== 7. Get data from views ======
-Created Tuesday 03 November 2020
-
-* Just use the correct gettter methods for the type of view.
-* They just have 'get' instead of 'set' in the setter name prefix, mostly.

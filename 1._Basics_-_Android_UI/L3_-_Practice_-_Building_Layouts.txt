@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-25T16:25:25+05:30
-
-====== L3 - Practice - Building Layouts ======
-Created Sunday 25 October 2020
-
-We install JDK and Android Studio.

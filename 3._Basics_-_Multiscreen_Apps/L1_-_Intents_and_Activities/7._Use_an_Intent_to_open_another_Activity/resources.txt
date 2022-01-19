@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-11-21T16:19:52+05:30
-
-====== resources ======
-Created Saturday 21 November 2020
-
-https://www.vogella.com/tutorials/AndroidIntent/article.html#usingintents_call

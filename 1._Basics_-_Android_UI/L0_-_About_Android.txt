@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-01-10T11:46:54+05:30
-
-====== L0 - About Android ======
-Created Sunday 10 January 2021
-
-=== The Android stack ===
-{{./pasted_image.png}}

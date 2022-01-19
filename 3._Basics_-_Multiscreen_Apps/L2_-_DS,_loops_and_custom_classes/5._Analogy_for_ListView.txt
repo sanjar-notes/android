@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-12-15T16:42:11+05:30
-
-====== 5. Analogy for ListView ======
-Created Tuesday 15 December 2020
-
-View recycling is not used everywhere. It is only used where the number of views are very large(i.e changing rapidly).

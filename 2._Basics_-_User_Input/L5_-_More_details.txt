@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-11-04T03:59:37+05:30
-
-====== L5 - More details ======
-Created Wednesday 04 November 2020
-
-[[../_App_4]]

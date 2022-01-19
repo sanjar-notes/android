@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-30T23:50:37+05:30
-
-====== L2 - Making An App interactive 2 ======
-Created Friday 30 October 2020
-
-[[../_App_1]]
