@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*! ADAPTED
+    Typeplate : Starter Kit
+    URL ........... http://typeplate.com
+    Version ....... 3.0.2
+    Github ........ https://github.com/typeplate/starter-kit
+    Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+    License ....... Creative Commmons Attribution 3.0
+    License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+    */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-rendering: optimizeLegibility;
+        line-height: 1;
+        margin-top: 0;
+        color: #222;
+      }
+
+      blockquote + figcaption cite {
+        display: block;
+        font-size: inherit;
+        text-align: right;
+      }
+
+      body {
+        word-wrap: break-word;
+      }
+
+      pre code {
+        word-wrap: normal;
+      }
+
+      body {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        color: #444;
+      }
+
+      h1 {
+        font-size: 2em;
+        /* 2*16 = 32 */
+      }
+
+      h2 {
+        font-size: 1.5em;
+        /* 1.5*16 = 24 */
+      }
+
+      h3 {
+        font-size: 1.17em;
+        /* 1.17*16 = 18.72 */
+      }
+
+      h4 {
+        font-size: 1em;
+        /* 1*16 = 16 */
+      }
+
+      h5 {
+        font-size: 0.83em;
+        /* 0.83*16 = 13.28 */
+      }
+
+      h6 {
+        font-size: 0.75em;
+        /* 0.75*16 = 12 */
+      }
+
+      h1 {
+        margin: 2.42424rem 0 1.454544rem;
+      }
+
+      h2 {
+        margin: 2.0202rem 0 1.21212rem;
+      }
+
+      h3 {
+        margin: 1.61616rem 0 1rem;
+      }
+
+      h4 {
+        margin: 1.21212rem 0 1;
+      }
+
+      h5 {
+        margin: 0.80808rem 0;
+      }
+
+      h6 {
+        margin: 0.70707rem 0;
+      }
+
+      p {
+        margin: auto auto 1.5rem;
+      }
+
+      small {
+        font-size: 65%;
+      }
+
+      input,
+      abbr,
+      acronym,
+      blockquote,
+      code,
+      kbd,
+      q,
+      samp,
+      var {
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+
+      pre {
+        white-space: pre;
+      }
+
+      pre code {
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+      }
+
+      code {
+        white-space: pre;
+        font-family: SF Mono, Consolas, Dejavu Sans Mono, Menlo, monospace;
+      }
+
+      abbr {
+        -webkit-font-variant: small-caps;
+        -moz-font-variant: small-caps;
+        -ms-font-variant: small-caps;
+        font-variant: small-caps;
+        font-weight: 600;
+        text-transform: lowercase;
+        color: gray;
+      }
+
+      abbr[title]:hover {
+        cursor: help;
+      }
+
+      /* FROM http://purecss.io/layouts/side-menu/  adapted to remove pure classes*/
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+
+      code,
+      pre {
+        background-color: #f5f5f5;
+        color: #444;
+        border-radius: 2px;
+        text-shadow: 0px 1px 0px white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      pre code {
+        border: none;
+        box-shadow: none;
+      }
+
+      pre {
+        padding: 0.5em;
+      }
+
+      code {
+        display: inline-block;
+        padding: 0 0.5em;
+        line-height: 1.4;
+        font-size: 0.9em;
+      }
+
+      table {
+        border-spacing: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      table th,
+      table td {
+        padding: 0.3em 0.7em;
+      }
+
+      table th {
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #444;
+      }
+
+      table td {
+        border: 1px solid #f5f5f5;
+      }
+
+      /* Add transition to containers so they can push in and out. */
+
+      #layout,
+      #menu,
+      .menu-link {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+
+      /* This is the parent `<div>` that contains the menu and the content area. */
+
+      #layout {
+        position: relative;
+        padding-left: 0;
+      }
+
+      #layout.active #menu {
+        left: 250px;
+        width: 250px;
+      }
+
+      #layout.active .menu-link {
+        left: 250px;
+      }
+
+      /* The content `<div>` is where all your content goes. */
+
+      .content {
+        margin: 50px auto;
+        padding: 0 2em;
+        max-width: 80ex;
+        line-height: 1.6em;
+      }
+
+      /*
+      The `#menu` `<div>` is the parent `<div>` that contains the menu that
+      appears on the left side of the page.
+      */
+
+      #menu {
+        margin-left: -250px;
+        /* "#menu" width */
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        /* so the menu or its navicon stays above all content */
+        background: #f4f4f4;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9em;
+      }
+
+      @media print {
+        #menu,
+        .menu-link {
+          display: none !important;
+        }
+      }
+
+      a,
+      a * {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      /* All anchors inside the menu should be styled like this. */
+
+      #menu a {
+        display: block;
+        padding: 0.5em 0.5em;
+      }
+
+      #menu a:first-letter {
+        text-transform: capitalize;
+      }
+
+      #menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0.5em;
+      }
+
+      #menu ul ul {
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        border-left: 4px solid rgba(255, 255, 255, 0.5);
+      }
+
+      /* Change color of the anchor links on hover/focus. */
+
+      #menu li a:hover,
+      #menu li a:focus {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      /* This styles the selected menu item `<li>`. */
+
+      #menu li a.active {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      /* This styles a link within a selected menu item `<li>`. */
+
+      #menu li a.active {
+        color: #222;
+      }
+
+      /* This styles the menu heading. */
+
+      #menu li.heading {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      #menu li.heading > * {
+        padding: 0.5em;
+        display: block;
+      }
+
+      #menu li.heading a {
+        color: #0c68af;
+      }
+
+      /* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+      /*
+      `.menu-link` represents the responsive menu toggle that shows/hides on
+      small screens.
+      */
+
+      .menu-link {
+        position: fixed;
+        display: block;
+        /* show this only on small screens */
+        top: 0;
+        left: 0;
+        /* "#menu width" */
+        font-size: 10px;
+        /* change this value to increase/decrease button size */
+        z-index: 10;
+        width: 2em;
+        height: auto;
+        padding: 1.6em 1.2em;
+        border-radius: 0 2px 2px 0;
+      }
+
+      .menu-link:hover {
+        background: #f4f4f4;
+      }
+
+      .menu-link span {
+        position: relative;
+        display: block;
+      }
+
+      .menu-link span,
+      .menu-link span:before,
+      .menu-link span:after {
+        background-color: #555;
+        width: 100%;
+        height: 0.2em;
+        border-radius: 1em;
+      }
+
+      .menu-link span:before,
+      .menu-link span:after {
+        position: absolute;
+        margin-top: -0.6em;
+        content: " ";
+      }
+
+      .menu-link span:after {
+        margin-top: 0.6em;
+      }
+
+      /* Hides the menu at `48em`, but modify this based on your app's needs. */
+
+      @media (min-width: 48em) {
+        .header,
+        .content {
+          padding-left: 2em;
+          padding-right: 2em;
+        }
+
+        #layout {
+          padding-left: 250px;
+          /* left col width "#menu" */
+          left: 0;
+        }
+        #menu {
+          left: 250px;
+        }
+
+        .menu-link {
+          position: fixed;
+          left: 250px;
+          display: none;
+        }
+
+        #layout.active .menu-link {
+          left: 250px;
+        }
+      }
+
+      @media (max-width: 48em) {
+        /* Only apply this when the window is small. Otherwise, the following case results in extra padding on the left:
+         * Make the window small.
+         * Tap the menu to trigger the active state.
+         * Make the window large again.
+         */
+        #layout.active {
+          position: relative;
+          left: 250px;
+        }
+      }
+
+      /* Heading anchors and permalinks */
+      h1[id],
+      h2[id],
+      h3[id],
+      h4[id],
+      h5[id],
+      h6[id] {
+        position: relative;
+      }
+      .heading-anchor-permalink {
+        /* Position the permalink to the left of the title */
+        position: absolute;
+        right: 100%;
+        /* Add some spacing as padding to not lose the hover */
+        padding-right: 0.6rem;
+        /* Make it only visible on heading hover, see below */
+        opacity: 0;
+      }
+      h1[id]:hover .heading-anchor-permalink,
+      h2[id]:hover .heading-anchor-permalink,
+      h3[id]:hover .heading-anchor-permalink,
+      h4[id]:hover .heading-anchor-permalink,
+      h5[id]:hover .heading-anchor-permalink,
+      h6[id]:hover .heading-anchor-permalink {
+        opacity: 0.5;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+      </a>
+      <nav id="menu">
+        <ul>
+<li><a class="" href="../../README.html">README</a></li>
+<li class="heading"><span>1. Basics   Android UI</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/0_index.html">0 index</a></li>
+<li class="heading"><span>L0   About Android</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L0_-_About_Android/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>L1   Building Layouts</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/1._Views.html">1. Views</a></li>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/2._IDE_and_XML.html">2. IDE and XML</a></li>
+<li class="heading"><span>3. XML Syntax</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/3._XML_Syntax/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. dp units</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/4._dp_units/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/5._wrap_content.html">5. wrap content</a></li>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/6._colors.html">6. colors</a></li>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/7._sp_units.html">7. sp units</a></li>
+<li class="heading"><span>8. Some attributes</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L1_-_Building_Layouts/8._Some_attributes/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>L2   Building Layouts 2</span></li>
+<ul>
+<li class="heading"><span>1. View groups</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/1._View_groups/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. XML namespace declaration</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/2._XML_namespace_declaration/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. match parent</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/3._match_parent/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. layout weight</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/4._layout_weight/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. RelativeLayout</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/5._RelativeLayout/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Padding and Margin</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/6._Padding_and_Margin/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/wqeqewqwe.html">wqeqewqwe</a></li>
+<li><a class="" href="../../1._Basics_-_Android_UI/L2_-_Building_Layouts_2/zConclusion.html">zConclusion</a></li>
+</ul>
+<li class="heading"><span>L3   Practice   Building Layouts</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/0_index.html">0 index</a></li>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/1._Troubleshooting.html">1. Troubleshooting</a></li>
+<li class="heading"><span>2. Hello World App</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/2._Hello_World_App/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Birthday Card App</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/3._Birthday_Card_App/0_index.html">0 index</a></li>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/3._Birthday_Card_App/Attributes_learned.html">Attributes learned</a></li>
+</ul>
+<li class="heading"><span>4. Overlapping Views</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/4._Overlapping_Views/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Project</span></li>
+<ul>
+<li><a class="" href="../../1._Basics_-_Android_UI/L3_-_Practice_-_Building_Layouts/5._Project/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>2. Basics   User Input</span></li>
+<ul>
+<li><a class="" href="../0_index.html">0 index</a></li>
+<li class="heading"><span>L1   Activities</span></li>
+<ul>
+<li><a class="" href="../L1_-_Activities/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Make the layout</span></li>
+<ul>
+<li><a class="" href="../L1_-_Activities/1._Make_the_layout/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Activities</span></li>
+<ul>
+<li><a class="" href="../L1_-_Activities/2._Activities/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Displaying text using Java</span></li>
+<ul>
+<li><a class="" href="../L1_-_Activities/3._Displaying_text_using_Java/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../L1_-_Making_An_App_interactive_1.html">L1   Making An App interactive 1</a></li>
+<li><a class="" href="../L2_-_Making_An_App_interactive_2.html">L2   Making An App interactive 2</a></li>
+<li class="heading"><span>L2   Nested ViewGroups</span></li>
+<ul>
+<li><a class="" href="../L2_-_Nested_ViewGroups/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Changing the layout</span></li>
+<ul>
+<li><a class="" href="../L2_-_Nested_ViewGroups/1._Changing_the_layout/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Nested Viewgroups</span></li>
+<ul>
+<li><a class="" href="../L2_-_Nested_ViewGroups/2._Nested_Viewgroups/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../L3_-_Making_an_App_Interactive_3.html">L3   Making an App Interactive 3</a></li>
+<li class="heading"><span>L3   Steps for making an app</span></li>
+<ul>
+<li><a class="" href="../L3_-_Steps_for_making_an_app/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Making the layout</span></li>
+<ul>
+<li><a class="" href="../L3_-_Steps_for_making_an_app/1._Making_the_layout/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>L4   Details of an Android app</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/0_index.html">0 index</a></li>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/1._Anatomy_of_an_Android_app.html">1. Anatomy of an Android app</a></li>
+<li class="heading"><span>2. Resource IDs</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/2._Resource_IDs/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Resources</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/2._Resources/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Relation between Java and XML</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/3._Relation_between_Java_and_XML/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Java objects</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/4._Java_objects/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. setContentView method</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/5._setContentView_method/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Capturing views</span></li>
+<ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/6._Capturing_views/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/7._Get_data_from_views.html">7. Get data from views</a></li>
+<li><a class="" href="../L4_-_Details_of_an_Android_app/8._Logging_events.html">8. Logging events</a></li>
+</ul>
+<li><a class="" href="../L4_-_Details_of_the_workflow.html">L4   Details of the workflow</a></li>
+<li class="heading"><span>L5   More details</span></li>
+<ul>
+<li><a class="" href="0_index.html">0 index</a></li>
+<li class="heading"><span>1. CheckBox</span></li>
+<ul>
+<li><a class="" href="1._CheckBox/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="10._Final_Lecture.html">10. Final Lecture</a></li>
+<li class="heading"><span>2. RadioGroup</span></li>
+<ul>
+<li><a class="" href="2._RadioGroup/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Scrolling</span></li>
+<ul>
+<li><a class="" href="3._Scrolling/0_index.html">0 index</a></li>
+</ul>
+<li><a class="active" href="4._Googler_suggestions.html">4. Googler suggestions</a></li>
+<li class="heading"><span>5. TextInput</span></li>
+<ul>
+<li><a class="" href="5._TextInput/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Intent</span></li>
+<ul>
+<li><a class="" href="6._Intent/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>7. Localization</span></li>
+<ul>
+<li><a class="" href="7._Localization/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>8. Styles</span></li>
+<ul>
+<li><a class="" href="8._Styles/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>9. Themes</span></li>
+<ul>
+<li><a class="" href="9._Themes/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>3. Basics   Multiscreen Apps</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/0_index.html">0 index</a></li>
+<li class="heading"><span>L1   Intents and Activities</span></li>
+<ul>
+<li class="heading"><span>1. Intro</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/1._Intro/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>10. Event Listeners   Intro</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/10._Event_Listeners_-_Intro/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>11. Event Listeners in Android   Details</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/11._Event_Listeners_in_Android_-_Details/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/12._Why_use_interfaces.html">12. Why use interfaces</a></li>
+<li class="heading"><span>13. How to setup an event listener</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/13._How_to_setup_an_event_listener/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Android app directory structure</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/2._Android_app_directory_structure/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Overview of the App</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/3._Overview_of_the_App/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/4._Gradle_files.html">4. Gradle files</a></li>
+<li class="heading"><span>5. Create New Activities</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/5._Create_New_Activities/0_index.html">0 index</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/5._Create_New_Activities/xtra.html">xtra</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/6._AndroidManifest.xml_file.html">6. AndroidManifest.xml file</a></li>
+<li class="heading"><span>7. Use an Intent to open another Activity</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/7._Use_an_Intent_to_open_another_Activity/0_index.html">0 index</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/7._Use_an_Intent_to_open_another_Activity/resources.html">resources</a></li>
+</ul>
+<li class="heading"><span>8. Implicit vs Explicit Intents</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/8._Implicit_vs_Explicit_Intents/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>9. Modifying the label(heading)</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/9._Modifying_the_label(heading)/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L1_-_Intents_and_Activities/Conclusion.html">Conclusion</a></li>
+</ul>
+<li class="heading"><span>L2   DS, loops and custom classes</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/1._Course_Map.html">1. Course Map</a></li>
+<li class="heading"><span>10. Completing changes for all sections</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/10._Completing_changes_for_all_sections/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/2._Add_views_using_Java.html">2. Add views using Java</a></li>
+<li class="heading"><span>3. Memory is Limited</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/3._Memory_is_Limited/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. View Recycling</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/4._View_Recycling/0_index.html">0 index</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/4._View_Recycling/Questions.html">Questions</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/5._Analogy_for_ListView.html">5. Analogy for ListView</a></li>
+<li class="heading"><span>6. ListView and Array Adapter</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/6._ListView_and_Array_Adapter/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>7. Code for ListView and ArrayAdapter</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/7._Code_for_ListView_and_ArrayAdapter/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>8. Custom Adapter   Concept</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/8._Custom_Adapter_-_Concept/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/9._Custom_Adapter_-_Concept.html">9. Custom Adapter   Concept</a></li>
+<li class="heading"><span>9. Custom adapter   Practical</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/9._Custom_adapter_-_Practical/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>zConclusion</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L2_-_DS,_loops_and_custom_classes/zConclusion/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>L3   Report Card app</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L3_-_Report_Card_app/0_index.html">0 index</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L3_-_Report_Card_app/1._Project_Overview.html">1. Project Overview</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L3_-_Report_Card_app/2._Building_the_project.html">2. Building the project</a></li>
+</ul>
+<li class="heading"><span>L4</span></li>
+<ul>
+<li class="heading"><span>1. Lesson Intro</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/1._Lesson_Intro/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/10._Different_colors_for_each_activity.html">10. Different colors for each activity</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/11._Playing_Audio.html">11. Playing Audio</a></li>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/12._Adding_audio.html">12. Adding audio</a></li>
+<li class="heading"><span>13. Trying out audio playback</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/13._Trying_out_audio_playback/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/14._MediaPlayer_class.html">14. MediaPlayer class</a></li>
+<li class="heading"><span>2. Scoping out work for a new feature</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/2._Scoping_out_work_for_a_new_feature/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. What Order to make changes in</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/3._What_Order_to_make_changes_in/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Modify list item layout</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/4._Modify_list_item_layout/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Assets</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/5._Assets/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Modifying the Word class</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/6._Modifying_the_Word_class/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/7._Modifying_WordAdapter_class.html">7. Modifying WordAdapter class</a></li>
+<li class="heading"><span>8. Hiding the image in the PhrasesActivity</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/8._Hiding_the_image_in_the_PhrasesActivity/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>9. Visual Polish</span></li>
+<ul>
+<li><a class="" href="../../3._Basics_-_Multiscreen_Apps/L4/9._Visual_Polish/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>Home</span></li>
+<ul>
+<li><a class="" href="../../Home/0._Prerequisites.html">0. Prerequisites</a></li>
+<li><a class="" href="../../Home/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Roadmap</span></li>
+<ul>
+<li><a class="" href="../../Home/1._Roadmap/0_index.html">0 index</a></li>
+<li><a class="" href="../../Home/1._Roadmap/road_map_android.html">road map android</a></li>
+</ul>
+<li><a class="" href="../../Home/2._Code.html">2. Code</a></li>
+<li><a class="" href="../../Home/3._References.html">3. References</a></li>
+</ul>
+<li><a class="" href="../../notebook.html">notebook</a></li>
+</ul>
+      </nav>
+      <article id="main" class="content">
+        <h1 id="4.-googler-suggestions">4. Googler suggestions <a class="heading-anchor-permalink" href="#4.-googler-suggestions">#</a></h1>
+<p>Created Wednesday 04 November 2020</p>
+<p><a href="https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/">https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/</a></p>
+
+      </article>
+    </div>
+    <script>
+      // Load contents.json if you need it
+    </script>
+    <script>
+      // FROM http://purecss.io/js/ui.js
+      (function(window, document) {
+        var layout = document.getElementById("layout"),
+          menu = document.getElementById("menu"),
+          menuLink = document.getElementById("menuLink");
+
+        function toggleClass(element, className) {
+          var classes = element.className.split(/\s+/),
+            length = classes.length,
+            i = 0;
+
+          for (; i < length; i++) {
+            if (classes[i] === className) {
+              classes.splice(i, 1);
+              break;
+            }
+          }
+          // The className is not found
+          if (length === classes.length) {
+            classes.push(className);
+          }
+
+          element.className = classes.join(" ");
+        }
+
+        menuLink.onclick = function(e) {
+          var active = "active";
+
+          e.preventDefault();
+          toggleClass(layout, active);
+          toggleClass(menu, active);
+          toggleClass(menuLink, active);
+        };
+      })(this, this.document);
+    </script>
+  </body>
+</html>
